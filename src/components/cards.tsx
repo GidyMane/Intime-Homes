@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Bed, Maximize2, MapPin, ChevronLeft, ChevronRight, Expand } from "lucide-react"
+import { Bed, Maximize2, MapPin, Expand } from "lucide-react"
 import Image from "next/image"
 import { 
   Carousel,
@@ -169,7 +169,7 @@ export default function Component() {
 }
 
 function PropertyCarousel({ images }: {images: string[]}) {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [] = useState(0)
 
   return (
     <div className="relative">
